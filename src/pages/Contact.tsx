@@ -42,13 +42,13 @@ const contactMethods = [
   {
     icon: <FiPhone className="text-[#D4AF37]" />,
     title: "Téléphone",
-    details: ["+225 07 07 07 07 07", "+225 05 05 05 05 05"],
+    details: ["+225 07 78 24 75 99", "+225 07 19 93 41 01"],
 
   },
   {
     icon: <FiMail className="text-[#D4AF37]" />,
     title: "Email",
-    details: ["contact@black-agence.com", "support@black-agence.com"],
+    details: ["blackagenceci@gmail.com", "direction@blackagence.com"],
 
   },
   {
@@ -598,6 +598,7 @@ function Contact() {
         @media (max-width: 768px) {
           .grid { gap: 1rem; }
         }
+          
       `}</style>
     </>
   );

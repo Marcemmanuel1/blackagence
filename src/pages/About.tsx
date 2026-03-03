@@ -83,8 +83,8 @@ const teamValues = [
 ];
 
 const stats = [
-  { value: "50+", label: "Projets réalisés", icon: <FaRocket className="text-[#D4AF37]" /> },
-  { value: "15+", label: "Experts créatifs", icon: <FiUsers className="text-[#D4AF37]" /> },
+  { value: "20+", label: "Projets réalisés", icon: <FaRocket className="text-[#D4AF37]" /> },
+  { value: "6+", label: "Événements couverts", icon: <FiUsers className="text-[#D4AF37]" /> },
   { value: "98%", label: "Clients satisfaits", icon: <FiStar className="text-[#D4AF37]" /> },
   { value: "24/7", label: "Support disponible", icon: <FiGlobe className="text-[#D4AF37]" /> },
 ];
@@ -289,10 +289,8 @@ function About() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="min-h-screen bg-[url(/hero-about.jpg)] bg-cover bg-center pt-24 relative flex items-center lg:items-end"
+        className="min-h-screen bg-[url(/hero-about.png)] bg-cover bg-center pt-24 relative flex items-center lg:items-end"
       >
-        <div className="absolute inset-0 bg-black/50 shadow-[inset_0_0_30px_5px_rgba(0,0,0,0.8)]" />
-
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-0 lg:mb-20">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
