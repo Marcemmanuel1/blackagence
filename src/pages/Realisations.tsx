@@ -36,7 +36,7 @@ const categories = [
     label: "ÉVÉNEMENTS",
     description:
       "Organisation, couverture et mise en scène d'événements d'entreprise, lancements de produits, galas et conférences. Chaque projet raconte une histoire unique.",
-    image: "/gallerie-quatre.png",
+    image: "/gallerie-quatre.jpg",
     accent: "from-neutral-900/90 to-neutral-900/60",
   },
   {
@@ -46,7 +46,7 @@ const categories = [
     label: "DESIGN GRAPHIQUE",
     description:
       "Création d’affiches, identités visuelles, flyers et supports de communication modernes qui valorisent votre image de marque.",
-    image: "/realisation-trois.png",
+    image: "/realisation-trois.jpg",
     accent: "from-neutral-900/90 to-neutral-900/60",
   },
   {
@@ -56,7 +56,7 @@ const categories = [
     label: "APPLICATIONS WEB & MOBILE",
     description:
       "Développement de sites vitrines, e-commerce et plateformes web sur mesure, optimisés SEO et pensés pour une expérience utilisateur irréprochable.",
-    image: "/realisation-un.webp",
+    image: "/realisation-un.jpg",
     accent: "from-neutral-900/90 to-neutral-900/60",
   },
   {
@@ -84,7 +84,7 @@ function Realisations() {
       <Navbar />
 
       {/* ── Hero ── */}
-      <section className="min-h-[100vh] bg-[url(/hero-realisations.png)] bg-cover bg-center pt-24 relative flex items-center justify-center">
+      <section className="min-h-[100vh] bg-[url(/hero-realisations.jpg)] bg-cover bg-center pt-24 relative flex items-center justify-center">
         <div className="absolute inset-0 bg-black/60 shadow-[inset_0_0_60px_10px_rgba(0,0,0,0.9)]" />
         <div
           ref={heroRef.ref}

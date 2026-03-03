@@ -289,7 +289,7 @@ function About() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="min-h-screen bg-[url(/hero-about.png)] bg-cover bg-center pt-24 relative flex items-center lg:items-end"
+        className="min-h-screen bg-[url(/hero-about.jpg)] bg-cover bg-center pt-24 relative flex items-center lg:items-end"
       >
         <div className="absolute inset-0 bg-black/50 shadow-[inset_0_0_30px_5px_rgba(0,0,0,0.8)]" />
 

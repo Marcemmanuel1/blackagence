@@ -104,25 +104,27 @@ function Home() {
   ];
 
   const galleryImages = [
-    { src: "/gallerie-un.png", alt: "Projet photographie 1" },
-    { src: "/gallerie-deux.png", alt: "Projet design 1" },
-    { src: "/gallerie-trois.png", alt: "Projet web 1" },
-    { src: "/gallerie-quatre.png", alt: "Projet événement 1" },
-    { src: "/gallerie-cinq.png", alt: "Projet application 1" },
-    { src: "/gallerie-six.png", alt: "Projet réseaux sociaux 1" }
+    { src: "/gallerie-un.jpg", alt: "Projet photographie 1" },
+    { src: "/gallerie-deux.jpg", alt: "Projet design 1" },
+    { src: "/gallerie-trois.jpg", alt: "Projet web 1" },
+    { src: "/gallerie-quatre.jpg", alt: "Projet événement 1" },
+    { src: "/gallerie-cinq.jpg", alt: "Projet application 1" },
+    { src: "/gallerie-six.jpg", alt: "Projet réseaux sociaux 1" }
   ];
 
+  // Solution robuste pour les logos avec 6 logos originaux
   const clientLogos = [
-    { src: "/partenaire-un.jpg", alt: "Entreprise 1" },
+    { src: "/partenaire-un.png", alt: "Entreprise 1" },
     { src: "/partenaire-deux.png", alt: "Entreprise 2" },
     { src: "/partenaire-trois.png", alt: "Entreprise 3" },
-    { src: "/partenaire-quatre.png", alt: "Entreprise 4" },
-    { src: "/partenaire-cinq.jpg", alt: "Entreprise 5" },
-    { src: "/partenaire-six.jpg", alt: "Entreprise 6" },
-    { src: "/partenaire-sept.jpg", alt: "Entreprise 7" },
+    { src: "/partenaire-quatre.jpeg", alt: "Entreprise 4" },
+    { src: "/partenaire-cinq.png", alt: "Entreprise 5" },
+    { src: "/partenaire-six.png", alt: "Entreprise 6" }
   ];
 
-  const infiniteLogos = [...clientLogos, ...clientLogos, ...clientLogos, ...clientLogos];
+  // Duplication calculée pour un défilement infini fluide (6 logos × 5 = 30 logos)
+  const DUPLICATION_FACTOR = 5; // Assez de logos pour éviter les gaps visuels
+  const infiniteLogos = Array(DUPLICATION_FACTOR).fill(clientLogos).flat();
 
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index);
@@ -248,7 +250,7 @@ function Home() {
       )}
 
       {/* Hero Section */}
-      <section className="min-h-screen bg-[url(/hero-home.png)] bg-cover bg-center pt-24 relative flex items-center lg:items-end">
+      <section className="min-h-screen bg-[url(/hero-home.jpg)] bg-cover bg-center pt-24 relative flex items-center lg:items-end">
         <div className="absolute inset-0 bg-black/20 shadow-[inset_0_0_30px_5px_rgba(0,0,0,0.8)]" />
         <div
           ref={heroContent.ref}
@@ -467,14 +469,13 @@ function Home() {
             </div>
 
             {/* Image */}
-
             <div
               ref={philosophyImage.ref}
               className={`relative h-100 md:w-[650px] overflow-hidden border border-neutral-800 hover:border-[#D4AF37] transition-all duration-800 ease-out ${philosophyImage.inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
                 }`}
             >
               <img
-                src="/equipe.png"
+                src="/equipe.jpg"
                 alt="Notre équipe"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -582,8 +583,9 @@ function Home() {
         }
 
         .animate-infinite-scroll {
-          animation: infiniteScroll 40s linear infinite;
+          animation: infiniteScroll 35s linear infinite;
           width: fit-content;
+          will-change: transform;
         }
 
         .group:hover .animate-infinite-scroll {
@@ -593,6 +595,9 @@ function Home() {
         @media (max-width: 768px) {
           .mobile-border { border-color: #D4AF37 !important; }
           .mobile-border-gallery { border-color: #D4AF37 !important; }
+          .animate-infinite-scroll {
+            animation-duration: 25s;
+          }
         }
       `}</style>
     </>
