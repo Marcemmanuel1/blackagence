@@ -91,27 +91,27 @@ const stats = [
 
 const teamMembers = [
   {
-    name: "Jean Kouassi",
-    role: "Directeur Créatif",
-    bio: "10 ans d'expérience dans le design digital et la direction artistique",
+    name: "Ourayo Cyril",
+    role: "Gérant & Social Media Manager",
+    bio: "Expert en communication digitale et en stratégie de marque. Il pilote la vision créative et stratégique de l’agence.",
     icon: <FaLightbulb className="text-3xl text-[#D4AF37]" />,
   },
   {
-    name: "Marie Konan",
-    role: "Lead Développeur",
-    bio: "Experte en développement web et architecture technique",
+    name: "Abo Clovis",
+    role: "Co-gerant & Directeur du Département Studio",
+    bio: "Photographe et graphiste spécialisé en design numérique. Il transforme les idées en visuels puissants et mémorables.",
     icon: <FiCpu className="text-3xl text-[#D4AF37]" />,
   },
   {
-    name: "Paul Yao",
-    role: "Community Manager",
-    bio: "Spécialiste en stratégie digitale et réseaux sociaux",
+    name: "Prince Sylvestre",
+    role: "Responsable Graphiste",
+    bio: "Créatif passionné, il raconte des histoires à travers chaque visuel. Il conçoit des identités et des logos qui donnent vie aux marques.",
     icon: <FiUsers className="text-3xl text-[#D4AF37]" />,
   },
   {
-    name: "Sarah Bamba",
-    role: "Chef de Projet",
-    bio: "Coordination et gestion des projets digitaux complexes",
+    name: "Madame Kouamé",
+    role: "Commerciale & Coordinatrice de Projetst",
+    bio: "Elle assure la relation client et le développement commercial de l’agence. Elle coordonne les projets avec rigueur et efficacité.",
     icon: <FiTarget className="text-3xl text-[#D4AF37]" />,
   },
 ];
